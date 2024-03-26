@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Financiamiento</title>
+</head>
+<body>
+    <header> 
+        <div class="nav container">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <a href="/index.html"class="logo"><img src="/img/IMAGOTIPO LeaseDrive.png" height="45" alt=""></a>
+            <ul class="navbar">
+                <li><a href="/index.html">Principal</a></li>
+                <li><a href="/Catalogo.html" class="active">Categorias</a></li>
+                <li><a href="/Nosotros.html">Nosotros</a></li>
+            </ul>
+            <i class='bx bx-search' id="search-icon"></i>
+            <div class="search-box container">
+                <input type="search" name="" id="" placeholder="Buscar">
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="categories-container">
+            <ul class="categories">
+                <li><a href="/Catalago.html">Todos los carros</a></li>
+                <li><a href="/Autos/Honda.html" >Honda</a></li>
+                <li><a href="/Autos/Nissan.html" class="active">Nissan</a></li>
+                <li><a href="/Autos/Toyota.html" >Toyota</a></li>
+            </ul>
+        </div>
+        
+        <section class="contenido">
+            <div class="mostrador" id="mostrador">
+                <div class="fila">
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/img/car1.jpg" alt="">
+                        </div>
+                        <p class="descripcion"> AIR 97</p>
+                        <span class="precio">$ 1.300</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/img/car3.jpg" alt="">
+                        </div>
+                        <p class="descripcion" id> RUNNING TERRA </p>
+                        <span class="precio">$ 1.800</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/img/car4.jpg" alt="">
+                        </div>
+                        <p class="descripcion"> WINFLO 8
+                        </p>
+                        <span class="precio">$ 3.600</span>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/img/car1.jpg" alt="">
+                        </div>
+                        <p class="descripcion"> BLAZER 97</p>
+                        <span class="precio">$ 130</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/img/car3.jpg" alt="">
+                        </div>
+                        <p class="descripcion">LEGEND ESENTIAL</p>
+                        <span class="precio">$ 2.000</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="/img/car4.jpg" alt="">
+                        </div>
+                        <p class="descripcion">AIR ZOOM</p>
+                        <span class="precio">$ 2.500</span>
+                    </div>
+                </div> 
+            </div>
+            <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+            <div class="seleccion" id="seleccion">
+                <div class="cerrar" onclick="cerrar()">
+                    &#x2715
+                </div>
+                <div class="info">
+                    <img src="/img/car1.jpg" alt="" id="img">
+                    <h2 id="modelo"> MODEL 1</h2>
+                    <p id="descripcion">Descripción Modelo 1</p>
+                    <span class="precio" id="precio">$ 130</span>
+                    <div class="fila">
+                        <div class="size">
+                            <label for="">Color</label>
+                            <select name="" id="">
+                                <option value="">Negro</option>
+                                <option value="">Rojo</option>
+                                <option value="">Blanco</option>
+                                <option value="">Gris-metalico</option>
+                            </select>
+                        </div>
+                        <div class="box">
+                            <a href="#divOne" class="button">Cotizar</a>
+                        </div>
+                        <!--modal-->
+                        <div class="overlay" id="divOne">
+                            <div class="wrapper">
+                                <h2>Porfavor Llene el Formulario</h2>
+                                <a href="#" class="close">&times;</a>
+                                <div class="modal">
+                                    <div class="container">
+                                        <form>
+                                            <label>Primer Nombre</label>
+                                            <input type="text" placeholder="Nombre">
+                                            <label>Apellido</label>
+                                            <input type="text" placeholder="Apellido">
+                                            <label>Correo Electronico</label>
+                                            <input type="text" placeholder="Correo">
+                                            <label>Numero de telefono</label>
+                                            <input type="text" placeholder="Numero">
+                                            <input type="submit" value="submit">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    
+    <!-- Footer -->
+    <section class="footer">
+        <div class="footer-container container">
+            <div class="footer-box">
+                <a href="/index.html"class="logo"><img src="/img/IMAGOTIPO LeaseDrive.png" height="45" alt=""></a>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Pagina</h3>
+                <a href="#">Principal</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Categorias</a>
+                <a href="#">Sesion</a>
+            </div>
+            <div class="footer-box">
+                <h3>Contacto</h3>
+                <p>Mexico</p>
+                <p>United States</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Copiright -->
+    <div class="copyright">
+        <p>&#169; Software-AK Todos Los Derechos Reservados</p>
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
